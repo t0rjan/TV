@@ -1,0 +1,117 @@
+<title>频道列表</title>
+
+{{--<link rel="stylesheet" href="/assets/css/jquery-ui.css" />--}}
+{{--<link rel="stylesheet" href="/assets/css/datepicker.css" />--}}
+{{--<link rel="stylesheet" href="/assets/css/ui.jqgrid.css" />--}}
+
+<!-- ajax layout which only needs content area -->
+<div class="page-header">
+    <h1>
+        频道管理
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            频道列表
+        </small>
+    </h1>
+</div><!-- /.page-header -->
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+
+
+        <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr>
+                <th class="center">
+                    <label class="position-relative">
+                        <input type="checkbox" class="ace">
+                        <span class="lbl"></span>
+                    </label>
+                </th>
+                <th>id</th>
+                <th>频道名称</th>
+                <th class="hidden-480">创建用户</th>
+                <th>
+                    <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                    创建时间
+                </th>
+                <th>
+                    <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                    更新时间
+                </th>
+                <th class="hidden-480">状态</th>
+
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+
+            @foreach($data as $k=>$v)
+                <tr>
+                    <td class="center">
+                        <label class="position-relative">
+                            <input type="checkbox" class="ace">
+                            <span class="lbl"></span>
+                        </label>
+                    </td>
+
+                    <td>
+                        {{$v['id']}}
+                    </td>
+                    <td>{{$v['channel_name']}}</td>
+                    <td>{{$v['create_user']}}</td>
+                    <td class="hidden-480">{{$v['created_at']}}</td>
+                    <td class="hidden-480">{{$v['updated_at']}}</td>
+                    <td class="hidden-480">
+                        @if($v['is_status']==1)
+                            <span class="label label-sm label-success">启用</span>
+                            @else
+                            <span class="label label-sm label-warning">禁用</span>
+                            @endif
+                    </td>
+
+                    <td>
+                        <div class="hidden-sm hidden-xs btn-group">
+
+                            <button class="btn btn-xs btn-info">
+                                <i class="ace-icon fa fa-pencil bigger-120"></i>
+                            </button>
+
+                            <button class="btn btn-xs btn-danger">
+                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                            </button>
+
+                            <button class="btn btn-xs btn-warning">
+                                <i class="ace-icon fa fa-flag bigger-120"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            @endforeach
+
+            </tbody>
+        </table>
+
+
+        <!-- PAGE CONTENT ENDS -->
+    </div><!-- /.col -->
+</div><!-- /.row -->
+
+
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+    //    var scripts = [null, "/assets/js/date-time/bootstrap-datepicker.js", "/assets/js/jqGrid/jquery.jqGrid.src.js", "/assets/js/jqGrid/i18n/grid.locale-en.js", null]
+
+    //    $('.page-content-area').ace_ajax('loadScripts', scripts, function () {
+
+    //    });
+
+    var scripts = [null, null]
+    $('.page-content-area').ace_ajax('loadScripts', scripts, function () {
+        //inline scripts related to this page
+    });
+
+</script>

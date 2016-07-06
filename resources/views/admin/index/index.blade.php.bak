@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>性感动态图片网</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="all" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" media="all" href="{{asset('v1/css/Home/layout.css')}}"/>
+
+
+
+</head>
+<body>
+    {{--<div class="pc-navbar">--}}
+        {{--<ul class="nav nav-pills nav-stacked index-nav">--}}
+            {{--<li role="presentation" class="active">--}}
+                {{--<a href="#">--}}
+                    {{--<i class="glyphicon glyphicon-home"></i>--}}
+                    {{--<span class="title">首页</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+            {{--<li role="presentation">--}}
+                {{--<a href="#">--}}
+                    {{--<i class="glyphicon glyphicon-home"></i>--}}
+                    {{--<span class="title">gif动图</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+            {{--<li role="presentation">--}}
+                {{--<a href="#">--}}
+                    {{--<i class="glyphicon glyphicon-home"></i>--}}
+                    {{--<span class="title">视频</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+        {{--</ul>--}}
+    {{--</div>--}}
+    <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+        ...
+    </div>
+    <script type="javascript">$('#myAffix').affix({
+            offset: {
+                top: 100,
+                bottom: function () {
+                    return (this.bottom = $('.footer').outerHeight(true))
+                }
+            }
+        })</script>
+
+
+
+
+<script src="http://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+body,a,div,i {
+    font-family: "Microsoft YaHei UI";
+    /*!*body {*!*/
+    /*!*background-color: grey;*!*/
+    /*!*}*!*/
+
+    /*!*@media screen and (max-width: 960px) {*!*/
+    /*!*body {*!*/
+    /*!*background-color: red;*!*/
+    /*!*}*!*/
+    /*!*}*!*/
+
+    /*!*@media screen and (max-width: 768px) {*!*/
+    /*!*body {*!*/
+    /*!*background-color: orange;*!*/
+    /*!*}*!*/
+    /*!*}*!*/
+
+    /*!*@media screen and (max-width: 550px) {*!*/
+    /*!*body {*!*/
+    /*!*background-color: yellow;*!*/
+    /*!*}*!*/
+    /*!*}*!*/
+
+    /*!*@media screen and (max-width: 320px) {*!*/
+    /*!*body {*!*/
+    /*!*background-color: green;*!*/
+    /*!*}*!*/
+    /*!*}*!*/
+}
+
+/*如果是pc端*/
+@media (min-width: 1588px) {
+    .pc-navbar {
+        display: block;
+    }
+    .pc-content{
+        display: block;
+
+    }
+    .other-content{
+        display: none;
+    }
+    .other-navbar {
+        display: none;
+    }
+
+    .pc-navbar .index-nav {
+        width: 170px;
+    }
+
+    .pc-navbar .index-nav {
+        width: 5%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: #2a2a2a;
+        position: fixed;
+
+    }
+
+    .pc-navbar .index-nav .title {
+        color: white;
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 14px;
+    }
+
+}
+
+/*如果是手机端*/
+
+@media (max-width: 1587px) {
+    .other-navbar {
+        position: fixed;
+        width: 100%;
+        height: 46px;
+        display: block;
+        box-shadow: 0 1px 4px #eeeeee;
+
+        z-index: 1010;
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .index-navbar-parent{
+        float: left;
+    }
+    .index-tools{
+        /*padding-left: 26%;*/
+        float: right;
+        /*width:auto;*/
+        margin-top: 2%;
+        /*margin-top: 25px;*/
+    }
+    .index-tools a{
+        padding-left: 3%;
+        color: #555555;
+    }
+    .pc-navbar {
+        display: none;
+    }
+
+    .other-navbar ul{
+        border: none;
+        background-color: #e78170;
+        margin-top: 0px;
+        top: 47px;
+        padding: 0;
+    }
+    .other-navbar ul li  {
+        margin-bottom: 1px;
+    }
+
+    .index-menu {
+        line-height: 44px;
+        color: #EA9284;
+        font-size:50px;
+    }
+    .other-navbar ul li a i {
+       margin-right: 17px;
+    }
+    .other-navbar ul li a {
+        background-color: #EA9284;
+        padding: 13px 13px 13px 15px;
+        color: white;
+        text-align: left;
+        top:35px;
+    }
+    .other-content{
+        margin-top:70px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .index-progress{
+        height: 2px;
+    }
+    /*测试进度条*/
+    .index-progress-info{
+        width:100%;
+    }
+    .index-title ul li a{
+        color: #555555;
+    }
+
+    .index-label{
+        margin-top:20px;
+
+    }
+    .index-label div{
+        padding-bottom:10px;
+        padding-right:10px;
+    }
+
+    .index-label div a{
+        text-align: center;
+        padding-right:2px;
+        float: left;
+        padding: 5px 10px;
+        border: 1px solid #d9d9d9;
+        border-radius: 14px;
+        box-sizing: border-box;
+
+    }
+    .index-article img{
+        width: 100%;
+        height: 100%;
+
+    }
+    .article-author span,.article-author a{
+        font-size: 12px;
+    }
+    .article-wrap-img{
+        float: right;
+        width: 100px;
+        height: 100px;
+    }
+    .list-group-item{
+        border:0px;
+        position: relative;
+        width: 100%;
+        padding-right: 2px;
+        padding-bottom: 17px;
+        margin: 0 0 17px;
+        border-bottom: 1px dashed #d9d9d9;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .index-article-title a{
+        color: #555555;
+    }
+
+    .index-article-footer a,.index-article-footer span {
+        color: #999999;
+        font-size: 12px;
+    }
+
+    .custom-button-bottom{
+        border-bottom: solid 1px;
+        border-bottom-style: dashed;
+        border-bottom-color: #EA9284;
+        border-radius: 1px;
+    }
+}
+
+
+
