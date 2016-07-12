@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2016-07-05.
+    * Generated on 2016-07-10.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -37,6 +37,9 @@ namespace PHPSTORM_META {
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view' instanceof \Illuminate\View\Factory,
+            'cao' instanceof \App\Services\SMS\Cao,
+            'fuck' instanceof \App\Services\SMS\Fuck,
+            'women' instanceof \App\Services\SMS\Women,
             'libphonenumber' instanceof \libphonenumber\PhoneNumberUtil,
             'captcha' instanceof \Mews\Captcha\Captcha,
             'debugbar' instanceof \Barryvdh\Debugbar\LaravelDebugbar,
@@ -151,6 +154,9 @@ namespace PHPSTORM_META {
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view' instanceof \Illuminate\View\Factory,
+            'cao' instanceof \App\Services\SMS\Cao,
+            'fuck' instanceof \App\Services\SMS\Fuck,
+            'women' instanceof \App\Services\SMS\Women,
             'libphonenumber' instanceof \libphonenumber\PhoneNumberUtil,
             'captcha' instanceof \Mews\Captcha\Captcha,
             'debugbar' instanceof \Barryvdh\Debugbar\LaravelDebugbar,
@@ -265,6 +271,9 @@ namespace PHPSTORM_META {
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view' instanceof \Illuminate\View\Factory,
+            'cao' instanceof \App\Services\SMS\Cao,
+            'fuck' instanceof \App\Services\SMS\Fuck,
+            'women' instanceof \App\Services\SMS\Women,
             'libphonenumber' instanceof \libphonenumber\PhoneNumberUtil,
             'captcha' instanceof \Mews\Captcha\Captcha,
             'debugbar' instanceof \Barryvdh\Debugbar\LaravelDebugbar,
@@ -379,6 +388,9 @@ namespace PHPSTORM_META {
             'view.engine.resolver' instanceof \Illuminate\View\Engines\EngineResolver,
             'view.finder' instanceof \Illuminate\View\FileViewFinder,
             'view' instanceof \Illuminate\View\Factory,
+            'cao' instanceof \App\Services\SMS\Cao,
+            'fuck' instanceof \App\Services\SMS\Fuck,
+            'women' instanceof \App\Services\SMS\Women,
             'libphonenumber' instanceof \libphonenumber\PhoneNumberUtil,
             'captcha' instanceof \Mews\Captcha\Captcha,
             'debugbar' instanceof \Barryvdh\Debugbar\LaravelDebugbar,

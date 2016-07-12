@@ -162,7 +162,6 @@ $(function ($) {
                     sopt: ['eq']
                 }
             },
-
             {
                 name: 'user_type',
                 index: 'user_type',
@@ -192,8 +191,6 @@ $(function ($) {
                     }
                 }
             },
-
-
             {
                 name: 'created_at',
                 index: 'created_at',
@@ -334,8 +331,15 @@ $(function ($) {
             viewPagerButtons: false,
             beforeShowForm: function (e) {
                 var form = $(e[0]);
+                console.debug(form);
+                $(form).find('tr[rowpos="1"]').after(
+                    '<tr rowpos="6" class="FormData" id="tr_password"><td class="CaptionTD">用户密码</td><td class="DataTD">&nbsp;<input type="text" value="" id="password" name="password" role="textbox" class="FormElement ui-widget-content ui-corner-all"></td></tr>'
+                );
+
                 form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
                 style_edit_form(form);
+
+
             },
             afterSubmit: function (response) {
                 window.alert(response.responseJSON.msg);
@@ -349,10 +353,8 @@ $(function ($) {
             beforeShowForm: function (e) {
                 var form = $(e[0]);
                 if (form.data('styled')) return false;
-
                 form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
                 style_delete_form(form);
-
                 form.data('styled', true);
             },
             //onClick: function (e) {

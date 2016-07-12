@@ -44,12 +44,6 @@ class UserController extends Controller
                 'msg' => $process->getErrorMessage()
             ]);
         }
-
-
-
-
-
-
         return response()->json([
             'code' => 1,
             'data' =>$process->getSuccessData(),

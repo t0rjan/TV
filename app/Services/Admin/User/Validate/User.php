@@ -48,7 +48,7 @@ class User extends BaseValidate
         if ($data['oper'] == 'add') {
             // 创建验证规则
             $rules = [
-                'channel_name' => 'required|max:255',
+                'name' => 'required|max:255',
                 'is_status' => 'max:1'
             ];
 
