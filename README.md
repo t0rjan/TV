@@ -12,5 +12,5 @@
 
 * 以及一大堆的乱七八糟的细节修复
 
-* 并欢迎下我的前同事兼好朋友：xcation
+* 并欢迎下我的前同事兼好朋友：[xcation](https://github.com/xcation)
 
