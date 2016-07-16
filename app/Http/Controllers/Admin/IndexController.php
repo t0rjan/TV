@@ -21,6 +21,7 @@ class IndexController extends Controller
         return view($this->viewDir . 'index');
     }
 
+
     public function welcome()
     {
         return view($this->viewDir . 'welcome');

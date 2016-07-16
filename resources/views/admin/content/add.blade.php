@@ -106,7 +106,9 @@
     var scripts = ['/lib/jquery/jquery.validate.min.js', '/lib/ue/umeditor.config.js']
 
     $('.page-content-area').ace_ajax('loadScripts', scripts, function () {
+
         $.getScript('/lib/ue/umeditor.min.js', function () {
+
             $(function ($) {
                 UM.getEditor('myEditor');
 
@@ -135,6 +137,7 @@
 //                }
 //
 //            });
+
 
         });
         });
