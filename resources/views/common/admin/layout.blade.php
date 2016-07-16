@@ -65,7 +65,7 @@
             <a href="#" class="navbar-brand">
                 <small>
                     <i class="fa fa-leaf"></i>
-                    Sexy Admin
+                    TV 后台管理
                 </small>
             </a>
 
