@@ -58,13 +58,7 @@ class AuthController extends Controller
         return Validator::make($data, [
             'phone' => 'required|phone:CN,mobile|max:255|unique:users',
             'captcha' => 'required|captcha',
-            'password' => 'required|min:6|confirmed',
-//            'true_name' => 'required',
-//            'id_card' => 'required|min:18|max:19',
-//            'qq' => 'numeric',
-//            'email' => 'email',
-//            'question' => 'max:20',
-//            'answer' => 'max:20'
+            'password' => 'required|min:6|confirmed'
         ]);
     }
 
