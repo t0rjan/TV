@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>Welcome - Sexy Admin</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <!-- bootstrap & fontawesome -->
@@ -35,6 +33,8 @@
     <script src="/assets/js/respond.js"></script>
     <![endif]-->
 
+
+    @yield('css')
 </head>
 
 <body class="no-skin">
@@ -241,7 +241,7 @@
                                 <li>
                                     <a href="#" class="clearfix">
                                         <img src="/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar"/>
-												<span class="msg-body">
+                                        <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Alex:</span>
 														Ciao sociis natoque penatibus et auctor ...
@@ -258,7 +258,7 @@
                                 <li>
                                     <a href="#" class="clearfix">
                                         <img src="/assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar"/>
-												<span class="msg-body">
+                                        <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Susan:</span>
 														Vestibulum id ligula porta felis euismod ...
@@ -275,7 +275,7 @@
                                 <li>
                                     <a href="#" class="clearfix">
                                         <img src="/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar"/>
-												<span class="msg-body">
+                                        <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Bob:</span>
 														Nullam quis risus eget urna mollis ornare ...
@@ -292,7 +292,7 @@
                                 <li>
                                     <a href="#" class="clearfix">
                                         <img src="/assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar"/>
-												<span class="msg-body">
+                                        <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Kate:</span>
 														Ciao sociis natoque eget urna mollis ornare ...
@@ -309,7 +309,7 @@
                                 <li>
                                     <a href="#" class="clearfix">
                                         <img src="/assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar"/>
-												<span class="msg-body">
+                                        <span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Fred:</span>
 														Vestibulum id penatibus et auctor  ...
@@ -338,9 +338,9 @@
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
                         <img class="nav-user-photo" src="/assets/avatars/user.jpg" alt="Jason's Photo"/>
-								<span class="user-info">
-									<small>Welcome,</small>
-									Jason
+                        <span class="user-info">
+									<small>欢迎,</small>
+                            {{Auth::user()['nickname']}}
 								</span>
 
                         <i class="ace-icon fa fa-caret-down"></i>
@@ -364,7 +364,7 @@
                         <li class="divider"></li>
 
                         <li>
-                            <a href="#">
+                            <a href="{{url('logout')}}">
                                 <i class="ace-icon fa fa-power-off"></i>
                                 Logout
                             </a>
@@ -596,7 +596,7 @@
 						</span>
 
                 &nbsp; &nbsp;
-						<span class="action-buttons">
+                <span class="action-buttons">
 							<a href="#">
                                 <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
                             </a>
@@ -674,7 +674,7 @@
 
 
 </script>
-
+@yield('js')
 </body>
 </html>
 
