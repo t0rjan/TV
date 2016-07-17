@@ -67,7 +67,7 @@
                 <label class="col-sm-3 control-label no-padding-right" for=""> 内容 </label>
 
                 <div class="col-sm-9">
-                    <script type="text/plain" id="myEditor" style="width:1000px;height:240px;"><p>这里我可以写一些输入提示</p>
+                    <script type="text/plain" id="myEditor" style="width:600px;"><p>这里我可以写一些输入提示</p>
                     </script>
                 </div>
             </div>
@@ -139,7 +139,7 @@
 //            });
 
 
-        });
+            });
         });
     });
 

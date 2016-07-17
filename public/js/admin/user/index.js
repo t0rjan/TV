@@ -180,9 +180,8 @@ $(function ($) {
                     required: true,
                     maxValue: 10
                 },
-                editoptions: {
-                    value: ''
-                },
+                editoptions: {value: "FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}
+                ,
                 searchoptions: {
                     sopt: ['eq'],
                     value: $('#user-grid-userType').data('usertype'),
