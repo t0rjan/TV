@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/bootstrap.css"/>
-    
+
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
     @yield('css')
 
