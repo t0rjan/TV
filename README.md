@@ -5,17 +5,17 @@
 =====================
 #### 前台
 
-##### 1.首页其实是手机版本的,在chrome 开发工具中,选择手机去浏览
+##### 1. 首页其实是手机版本的,在chrome 开发工具中,选择手机去浏览
 
-![](public/demo/index.png) 
+
+![](/public/demo/index.png) 
 
 =====================
 #### 后台
 
-##### 1.前端基于ace-admin,数据展示使用jqgrid
+##### 1. 前端基于ace-admin,数据展示使用jqgrid
 
-
-![](public/demo/backend.png) 
+![](/public/demo/index.png) 
 
 =====================
 #### 数据库
