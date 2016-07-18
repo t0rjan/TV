@@ -18,19 +18,19 @@ class ContentController extends Controller
 //        $data=$process->getIndex();
 
 
-//        return view(env('APP_VERSION', 'v1') . '.Admin.Channel.index',compact('data'));
+//        return view('Admin.Channel.index',compact('data'));
 //    }
 
 
     public function add()
     {
-        $process= new Process();
+        $process = new Process();
 
-        $channel=$process->getChannel();
+        $channel = $process->getChannel();
 
-        $label=$process->getLabel();
+        $label = $process->getLabel();
 
-        return view($this->viewDir . 'add',compact('channel','label'));
+        return view($this->viewDir . 'add', compact('channel', 'label'));
 
     }
 

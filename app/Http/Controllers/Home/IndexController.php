@@ -13,8 +13,9 @@ use App\Http\Controllers\Controller;
  */
 class IndexController extends Controller
 {
-    public function index(){
-        return view(env('APP_VERSION','v1').'.Home.index');
+    public function index()
+    {
+        return view('Home.index');
     }
 
 }
