@@ -1,5 +1,6 @@
 <title>添加频道</title>
 
+
 <!-- ajax layout which only needs content area -->
 <div class="page-header">
     <h1>

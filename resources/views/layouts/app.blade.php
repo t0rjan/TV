@@ -18,8 +18,15 @@
 
     <style>
         body {
-            font-family: 'monospace', 微软雅黑;
+            /*font-family: 'monospace', 微软雅黑;*/
+            /*font-family: arial, "Hiragino Sans GB", 微软雅黑, MicrosoftYaHei, 宋体, 宋体, Tahoma, Arial, Helvetica, STHeiti;*/
+
+            font-family: 'PingHei', 'PingFang SC', 'Helvetica Neue','微软雅黑' ,'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+
+            line-height: 1.8;
+
             font-size: 13px;
+            letter-spacing: .5px;
         }
 
         .fa-btn {

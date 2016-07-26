@@ -1,7 +1,5 @@
 <?php
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -60,6 +58,12 @@ Route::group(['middleware' => ['web']], function () {
         //用户列表
         Route::get('anonymous/user/index', 'Admin\UserController@index');
         Route::post('anonymous/user/index', 'Admin\UserController@index');
+
+        //用户列表
+//        Route::get('anonymous/user/index', 'Admin\UserController@index');
+//        Route::post('anonymous/user/index', 'Admin\UserController@index');
+
+
         //操作用户
         Route::post('anonymous/user/oper', 'Admin\UserController@oper');
 

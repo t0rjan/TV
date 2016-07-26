@@ -1,4 +1,5 @@
-<?php namespace App\Services\Admin\Channel\Validate;
+<?php
+namespace App\Services\Admin\Channel\Validate;
 
 use Validator;
 use App\Services\Admin\BaseValidate;
@@ -14,6 +15,8 @@ class Channel extends BaseValidate
 {
     public function oper($data = [])
     {
+
+
 
         if ($data['oper'] == 'del') {
             // 创建验证规则
