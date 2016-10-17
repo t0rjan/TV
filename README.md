@@ -15,7 +15,7 @@
 
 ##### 1. 前端基于ace-admin,数据展示使用jqgrid
 
-![](/public/demo/index.png) 
+![](/public/demo/backend.png) 
 
 =====================
 #### 数据库
